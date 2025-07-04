@@ -22,6 +22,7 @@ module Api
         
         user = User.new(user_params)
         if user.save
+          user.generate_otp
           render json: { message: "Sign Up seccessfully" }, status: :created
         else
           render json: { error: user.errors.full_messages }, status: :unprocessable_entity

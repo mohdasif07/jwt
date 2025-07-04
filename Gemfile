@@ -44,9 +44,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-  gem "letter_opener"
 end
 # For encoding and decoding JSON Web Tokens, commonly used in authentication        
 gem "jwt"    
 # Secure password hashing; used with `has_secure_password` in Rails         
 gem "bcrypt"    
+gem "letter_opener"
