@@ -3,7 +3,7 @@
   <body>
     <h2>Hello <%= @user.first_name %>,</h2>
     <p>Your OTP code is:</p>
-    <h3 style="color: #007aff"><%= @otp_code %></h3>
+    <h3 style="color: #007aff"><%= @user.otp_code %></h3>
     <p>This OTP is valid for 10 minutes.</p>
     <p>Thank you!</p>
   </body>

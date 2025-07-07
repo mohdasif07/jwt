@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       post :sign_in, to: 'sessions#sign_in'
       post :sign_up, to: 'sessions#sign_up'
+      post :verify_otp, to: 'verification#verify_otp'
     end
   end
   
